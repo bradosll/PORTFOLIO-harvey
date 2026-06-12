@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional portfolio of Harvey A. Carolino - IT student at DNSC, IoT Specialist, Canva Graphic Designer, and Team Player. Explore my OJT experience, projects, and credentials.">
+    <meta name="keywords"
+        content="Harvey Carolino, Harvey A. Carolino, Portfolio, IoT, Canva, Graphic Design, DNSC, Tagum City, OJT, Certificates, Projects">
+    <meta name="author" content="Harvey A. Carolino">
+    <title>Harvey A. Carolino | IoT & Canva Graphic Design Portfolio</title>
+    <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Canvas for Interactive Constellation Network -->
+    <canvas id="flow-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span>CAROLINO</span><span class="dot">.</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Me</a></li>
+                    <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact Me</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- Mobile Menu Hamburger Button -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Asymmetric Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-split">
+                    <div class="hero-content reveal-left">
+                        <span class="badge">Welcome to my space</span>
+                        <h1 class="hero-title">
+                            Empowering Ideas</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Hi, I'm <span class="highlight">Harvey A. Carolino</span>. I specialize in configuring smart
+                            hardware setups (IoT), creating modern branding layouts in Canva, and collaborating with
+                            team groups.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">Projects<i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual reveal-right">
+                        <!-- 3D Interactive Card Showcase -->
+                        <div class="interactive-tilt-card" id="hero-tilt-card">
+                            <div class="card-inner">
+                                <div class="card-glass"></div>
+                                <div class="card-glow-point"></div>
+                                <div class="card-content">
+                                    <div class="telemetry-terminal">
+                                        <div class="terminal-header">
+                                            <div class="terminal-buttons">
+                                                <span class="term-dot close"></span>
+                                                <span class="term-dot minimize"></span>
+                                                <span class="term-dot expand"></span>
+                                            </div>
+                                            <div class="terminal-title">carolino_node_telemetry.sh</div>
+                                        </div>
+                                        <div class="terminal-body" id="telemetry-body">
+                                            <div class="term-line"><span class="term-prompt">guest@carolino:~$</span>
+                                                ./start_telemetry.sh</div>
+                                            <div class="term-line"><span class="term-success">[SUCCESS]</span> Core IoT
+                                                connection established.</div>
+                                            <div class="term-line"><span class="term-info">[INFO]</span> ESP32 active
+                                                node: Purok Waling2</div>
+                                            <div class="term-line"><span class="term-warning">[DATA]</span> Moisture
+                                                Level: 45% (optimal)</div>
+                                            <div class="term-line"><span class="term-info">[INFO]</span> Loading Canva
+                                                designs... OK</div>
+                                            <div class="term-line"><span class="term-success">[READY]</span> System
+                                                status online.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-status-bar">
+                                        <div class="pulse-dot"></div>
+                                        <span>IoT Node Telemetry Active</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Scroll Indicator -->
+            <a href="#about" class="scroll-down" aria-label="Scroll to About section">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">My Technical Journey</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-image-wrapper reveal-left">
+                        <div class="about-image-card">
+                            <img src="assets/harveyprofile.png" alt="Harvey Carolino Portrait" class="about-avatar">
+                            <div class="glow-overlay"></div>
+                        </div>
+                    </div>
+
+                    <div class="about-content reveal-right">
+                        <h3 class="about-greeting">Bridging Physical Hardware with Digital Art</h3>
+                        <p class="about-bio">
+                            As an Information Technology student at Davao del Norte State College (DNSC), I align
+                            analytical logic with structural hardware applications. Rather than focusing solely on
+                            software development, I have a deep affinity for embedded microcontrollers, electronics, and
+                            digital creation.
+                        </p>
+                        <p class="about-bio">
+                            My primary technical goal is to build reliable, responsive smart environments. By using
+                            microcontrollers like the ESP32 and connecting them to cloud platforms, I enjoy designing
+                            solutions that solve real-world problems.
+                        </p>
+
+                        <!-- Core Competency Grid -->
+                        <div class="skills-wrapper">
+                            <h4 class="skills-title">Core Disciplines</h4>
+                            <div class="skills-grid">
+                                <div class="skill-card"
+                                    data-tooltip="Branding Layouts, Social Media Graphic Designs, Promotional Assets">
+                                    <div class="skill-icon"><i class="fa-solid fa-palette"></i></div>
+                                    <span class="skill-name">Digital Artist</span>
+                                </div>
+                                <div class="skill-card"
+                                    data-tooltip="ESP32/ESP8266 setups, Sensor Telemetry, Arduino Programming">
+                                    <div class="skill-icon"><i class="fa-solid fa-microchip"></i></div>
+                                    <span class="skill-name">IoT Tech</span>
+                                </div>
+                                <div class="skill-card"
+                                    data-tooltip="Workspace Network Hub Installation, LAN Configuration, Hardware Troubleshooting">
+                                    <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+                                    <span class="skill-name">Network support</span>
+                                </div>
+                                <div class="skill-card"
+                                    data-tooltip="Coordinating goals, collective project contributions, and reliability">
+                                    <div class="skill-icon"><i class="fa-solid fa-people-group"></i></div>
+                                    <span class="skill-name">Team Player</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bars -->
+                        <div class="progress-container">
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-info">
+                                    <span>Basic IoT Integration</span>
+                                    <span>78%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 78%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-info">
+                                    <span>Canva Graphic Design</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-info">
+                                    <span>Team Collaboration</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work Journey Timeline -->
+                <div class="about-journey-wrapper reveal-up">
+                    <div class="timeline-container">
+                        <h3 class="timeline-section-title"><i class="fa-solid fa-route"></i> OJT Work Experience</h3>
+
+                        <div class="journey-timeline">
+                            <!-- Timeline Item 1 -->
+                            <div class="journey-item reveal-up">
+                                <div class="journey-badge">2026</div>
+                                <div class="journey-connector">
+                                    <div class="connector-dot"></div>
+                                    <div class="connector-line"></div>
+                                </div>
+                                <div class="journey-card">
+                                    <div class="journey-icon"><i class="fa-solid fa-briefcase"></i></div>
+                                    <h4 class="journey-role">On-the-Job Trainee</h4>
+                                    <span class="journey-org">DNSC IT Department & Partner Offices</span>
+                                    <p class="journey-desc">
+                                        Assisted the IT Division in managing municipal network infrastructure, setting
+                                        up Local Area Networks (LAN) across offices, troubleshooting hardware units,
+                                        performing system backups, and installing utility packages for municipal
+                                        workers.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="certificates-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Certificates</span>
+                    <h2 class="section-title">Verified Credentials</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="certificates-grid">
+                    <!-- Certificate 1: OJT -->
+                    <div class="cert-card reveal-up">
+                        <div class="cert-visual">
+                            <div class="cert-image-box">
+                                <img src="assets/harveyojt.jpg" alt="OJT Certificate of Completion" class="cert-img">
+                            </div>
+                            <div class="cert-tag">Work Experience</div>
+                        </div>
+                        <div class="cert-body">
+                            <h3 class="cert-title">OJT Certificate of Completion</h3>
+                            <span class="cert-issuer">DNSC IT Department & Partner Offices</span>
+                            <p class="cert-text">
+                                Validates the completion of the On-the-Job Training program, practicing network
+                                configurations, workspace IT troubleshooting, and graphic layouts in a professional
+                                environment.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Certificate 2: IoT -->
+                    <div class="cert-card reveal-up">
+                        <div class="cert-visual">
+                            <div class="cert-image-box">
+                                <img src="assets/certificate of parcitipation.png"
+                                    alt="Basic IoT & Sensor Integrations Certificate" class="cert-img">
+                            </div>
+                            <div class="cert-tag">Academic Tech</div>
+                        </div>
+                        <div class="cert-body">
+                            <h3 class="cert-title">Capstone Project Participation</h3>
+                            <span class="cert-issuer">DNSC Institute of Computing</span>
+                            <p class="cert-text">
+                                Awarded for active presentation of collaborative technology systems and
+                                capstone solutions during the annual exhibit.</p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2: IoT -->
+                    <div class="cert-card reveal-up">
+                        <div class="cert-visual">
+                            <div class="cert-image-box">
+                                <img src="assets/certificate of completion.png"
+                                    alt="Basic IoT & Sensor Integrations Certificate" class="cert-img">
+                            </div>
+                            <div class="cert-tag">Capstone Completion</div>
+                        </div>
+                        <div class="cert-body">
+                            <h3 class="cert-title">Capstone Completion Certificate</h3>
+                            <span class="cert-issuer">Municipality of Asuncion</span>
+                            <p class="cert-text">
+                                Validates successful completion and presentation
+                                of the capstone project "Development of Geospatial and Clustering Analysis System for
+                                Optimized Planning and Budgeting in Gender Development".</p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 3: Canva -->
+                    <div class="cert-card reveal-up">
+                        <div class="cert-visual">
+                            <div class="cert-image-box">
+                                <img src="assets/harveyhacker.png" alt="Canva Design & Branding Layouts Certificate"
+                                    class="cert-img">
+                            </div>
+                            <div class="cert-tag">Cisco Academy</div>
+                        </div>
+                        <div class="cert-body">
+                            <h3 class="cert-title">Cisco Ethical Hacker & Network Security</h3>
+                            <span class="cert-issuer">Cisco Networking Academy</span>
+                            <p class="cert-text">
+                                Covers structural IP mapping, vulnerability scans, wireless access
+                                security configurations, and defense mechanisms.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Projects</span>
+                    <h2 class="section-title">Featured Work</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Modern Project Filters -->
+                <div class="project-filters reveal-up">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="iot">IoT Systems</button>
+                    <button class="filter-btn" data-filter="design">Canva Design</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1: Smart Room Controller -->
+                    <div class="project-card reveal-up" data-category="iot">
+                        <div class="project-media">
+                            <img src="assets/GAD.png" alt="Smart Room Controller" class="project-img">
+                            <div class="project-glass-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-icon-link" aria-label="Details"><i
+                                            class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-tag">Web Development</span>
+                            <h3 class="project-card-title">Development of Geospatial and Clustering Analysis System for
+                                Optimized Planning and Budgeting in Gender Development</h3>
+                            <p class="project-desc">
+                                A web-based Planning and Budgeting Management System that integrates geospatial mapping
+                                and K-Means clustering to support Gender and Development (GAD) planning, budget
+                                allocation, project monitoring, and data-driven decision-making for local government
+                                units.
+                            </p>
+                            <div class="project-tech">
+                                <span>Vue.js</span>
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>K-Means</span>
+                                <span>Geospatial</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Soil Moisture IoT Monitor -->
+                    <div class="project-card reveal-up" data-category="iot">
+                        <div class="project-media">
+                            <img src="assets/scanease.png" alt="Soil Moisture Monitor" class="project-img">
+                            <div class="project-glass-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-icon-link" aria-label="Details"><i
+                                            class="fa-solid fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-tag">Web Application</span>
+                            <h3 class="project-card-title">ScanEase</h3>
+                            <p class="project-desc">
+                                A document scanning and management system designed to simplify file digitization,
+                                organization, and retrieval. The system provides an efficient way to manage scanned
+                                documents and improve accessibility of digital records.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Database</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-layout">
+                    <div class="contact-info-panel reveal-left">
+                        <h3 class="info-title">Let's Connect</h3>
+                        <p class="info-text">
+                            Do you have a project idea, need assistance with customized graphic layouts, or want to
+                            explore smart sensor integrations? Feel free to reach out using the details below or send a
+                            direct message through the form.
+                        </p>
+
+                        <div class="details-list">
+                            <div class="detail-card">
+                                <div class="detail-icon-box"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="detail-data">
+                                    <span class="detail-label">Email Address</span>
+                                    <a href="mailto:carolino.harvey@dnsc.edu.ph"
+                                        class="detail-value">carolino.harvey@dnsc.edu.ph</a>
+                                </div>
+                            </div>
+
+                            <div class="detail-card">
+                                <div class="detail-icon-box"><i class="fa-solid fa-phone"></i></div>
+                                <div class="detail-data">
+                                    <span class="detail-label">Contact Number</span>
+                                    <a href="tel:09977287982" class="detail-value">0997 728 7982</a>
+                                </div>
+                            </div>
+
+                            <div class="detail-card">
+                                <div class="detail-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="detail-data">
+                                    <span class="detail-label">Address</span>
+                                    <p class="detail-value">Purok Waling2 Bincungan Tagum City</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container reveal-right">
+                        <div class="form-wrapper">
+                            <form id="portfolio-contact-form" class="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="user-name">Your Name</label>
+                                        <input type="text" id="user-name" required placeholder="John Doe">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="user-email">Email Address</label>
+                                        <input type="email" id="user-email" required placeholder="john@example.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="msg-subject">Subject</label>
+                                    <input type="text" id="msg-subject" required
+                                        placeholder="Project Inquiry / Collaboration">
+                                </div>
+                                <div class="form-group">
+                                    <label for="user-msg">Your Message</label>
+                                    <textarea id="user-msg" rows="5" required
+                                        placeholder="Write your message here..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-submit">
+                                    Send Message <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </form>
+
+                            <!-- Success State Modal Overlay Inside Form Container -->
+                            <div id="form-success-overlay" class="form-overlay-modal">
+                                <div class="overlay-inner-card">
+                                    <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                                    <h4 class="overlay-success-title">Message Sent!</h4>
+                                    <p class="overlay-success-text">Thank you, Harvey has received your message and will
+                                        respond to you shortly.</p>
+                                    <button id="overlay-close" class="btn btn-primary">Okay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="mailto:carolino.harvey@dnsc.edu.ph" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:09977287982" title="Call"><i class="fa-solid fa-phone"></i></a>
+                <span class="footer-school"><i class="fa-solid fa-school"></i> DNSC</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Zoom Lightbox Modal for Certificates -->
+    <div id="cert-lightbox" class="cert-modal">
+        <div class="cert-modal-content">
+            <button id="cert-lightbox-close" class="cert-modal-close" aria-label="Close modal">&times;</button>
+            <img id="cert-lightbox-img" src="" alt="Certificate Zoom" class="cert-modal-img">
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
